@@ -1,7 +1,43 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://textures/wand.png" type="Texture" id=1]
+[ext_resource path="res://font/Gila.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scripts/Wand.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 600
+outline_color = Color( 0.882353, 0.901961, 0.0352941, 1 )
+font_data = ExtResource( 2 )
 
 [node name="wand" type="Sprite"]
 scale = Vector2( 0.0789957, 0.0891205 )
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -2953.0
+margin_top = -2084.5
+margin_right = -2913.0
+margin_bottom = -2044.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = -1127.0
+margin_top = -3768.0
+margin_right = 1126.0
+margin_bottom = -2527.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.929412, 1, 0, 1 )
+text = "+ 0
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

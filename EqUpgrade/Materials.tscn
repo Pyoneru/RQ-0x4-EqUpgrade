@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://textures/coin.svg" type="Texture" id=1]
+[ext_resource path="res://textures/gem.png" type="Texture" id=2]
+[ext_resource path="res://font/Gila.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scripts/Materials.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 72
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 72
+font_data = ExtResource( 3 )
+
+[node name="Materials" type="HBoxContainer"]
+margin_right = 1369.0
+margin_bottom = 512.0
+rect_scale = Vector2( 0.355875, 0.321205 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoldTexture" type="TextureRect" parent="."]
+margin_right = 500.0
+margin_bottom = 500.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoldLabel" type="Label" parent="."]
+margin_left = 504.0
+margin_top = 211.0
+margin_right = 668.0
+margin_bottom = 301.0
+custom_fonts/font = SubResource( 1 )
+text = "gold"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GemTexture" type="TextureRect" parent="."]
+margin_left = 672.0
+margin_right = 1193.0
+margin_bottom = 512.0
+rect_pivot_offset = Vector2( 100, 0 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GemLabel" type="Label" parent="."]
+margin_left = 1197.0
+margin_top = 211.0
+margin_right = 1369.0
+margin_bottom = 301.0
+custom_fonts/font = SubResource( 2 )
+text = "gem"
+align = 1
+valign = 1
