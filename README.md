@@ -15,4 +15,4 @@ I made this quest with Godot Engine :)
 * [Gold coin](https://opengameart.org/content/vector-gold-coin)
 * [Wand](https://opengameart.org/content/wand-witchcraft)
 * [Gem](https://opengameart.org/content/colorful-gem-crystals)
-* [Background] https://opengameart.org/content/parchment-background
+* [Background](https://opengameart.org/content/parchment-background)
