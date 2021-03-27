@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://textures/gem1.png" type="Texture" id=1]
+[ext_resource path="res://textures/coin.svg" type="Texture" id=2]
+[ext_resource path="res://wand.tscn" type="PackedScene" id=3]
+[ext_resource path="res://textures/FelisChaus_ParchmentBackground.jpg" type="Texture" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="FelisChaus_ParchmentBackground" type="Sprite" parent="."]
+position = Vector2( 640, 360.794 )
+scale = Vector2( 3.34768, 1.70509 )
+texture = ExtResource( 4 )
+
+[node name="wand" parent="." instance=ExtResource( 3 )]
+
+[node name="coin" type="Sprite" parent="."]
+position = Vector2( 667.182, 327.828 )
+scale = Vector2( 0.317123, 0.223889 )
+texture = ExtResource( 2 )
+
+[node name="gem1" type="Sprite" parent="."]
+position = Vector2( 779.945, 302.63 )
+scale = Vector2( 0.129421, 0.104275 )
+texture = ExtResource( 1 )
